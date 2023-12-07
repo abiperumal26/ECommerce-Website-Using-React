@@ -1,0 +1,119 @@
+/* Furniture.css */
+
+.furniture-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .furniture-card {
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .furniture-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .furniture-card h3 {
+    margin-top: 10px;
+  }
+  
+  .furniture-card p {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .add-to-cart-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #45a049;
+  }
+  
+  .open-cart-button {
+    background-color: #008cba;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .open-cart-button:hover {
+    background-color: #007aa7;
+  }
+  
+  .view-cart-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+  }
+  /* Gadget.css */
+
+.button-row {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px; /* Adjust the margin-top as needed */
+}
+
+.open-cart-button,
+.view-cart-link {
+  padding: 10px;
+  background-color: #3498db; /* Adjust the background color as needed */
+  color: #fff; /* Adjust the text color as needed */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+/* Gadget.css */
+
+.button-row {
+  clear: both; /* Add this line to clear floated elements */
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px; /* Adjust the margin-top as needed */
+}
+
+.open-cart-button,
+.view-cart-link {
+  padding: 10px;
+  background-color: #3498db; /* Adjust the background color as needed */
+  color: #fff; /* Adjust the text color as needed */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.open-cart-button:hover,
+.view-cart-link:hover {
+  background-color: #2980b9; /* Adjust the hover background color as needed */
+}
+
+
+.open-cart-button:hover,
+.view-cart-link:hover {
+  background-color: #2980b9; /* Adjust the hover background color as needed */
+}
+
+  

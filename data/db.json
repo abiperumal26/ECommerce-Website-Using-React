@@ -1,0 +1,243 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "exampleUser",
+      "email": "user@example.com",
+      "password": "password123",
+      "fullName": "John Doe",
+      "address": "123 Main St",
+      "phoneNumber": "555-1234"
+    },
+    {
+      "username": "abi",
+      "email": "abiperumal@gmail.com",
+      "password": "abinaya",
+      "confirmPassword": "abinaya",
+      "fullName": "abinaya",
+      "address": "KKK",
+      "phoneNumber": "9342090689",
+      "id": 2
+    },
+    {
+      "username": "abi",
+      "email": "abiperumal2000@gmail.com",
+      "password": "abiperumal",
+      "confirmPassword": "abiperumal",
+      "fullName": "Abinaya",
+      "address": "KKP",
+      "phoneNumber": "8578493056",
+      "id": 3
+    },
+    {
+      "username": "Varshith",
+      "email": "varshith@gmail.com",
+      "password": "varshith",
+      "confirmPassword": "varshith",
+      "fullName": "Varshith",
+      "address": "KRP",
+      "phoneNumber": "9342090689",
+      "id": 4
+    },
+    {
+      "username": "varshith",
+      "password": "varshith",
+      "id": 5
+    },
+    {
+      "username": "varshith",
+      "password": "varshith",
+      "id": 6
+    },
+    {
+      "username": "varu",
+      "email": "varu@gmail.com",
+      "password": "varshith",
+      "confirmPassword": "varshith",
+      "fullName": "Varu",
+      "address": "KRP",
+      "phoneNumber": "9435859395",
+      "id": 7
+    },
+    {
+      "username": "var",
+      "email": "varshima@gmail.com",
+      "password": "Varshith",
+      "confirmPassword": "Varshith",
+      "fullName": "Varshith",
+      "address": "KRP",
+      "phoneNumber": "9342090689",
+      "id": 8
+    },
+    {
+      "username": "varu",
+      "password": "varshith",
+      "id": 9
+    },
+    {
+      "username": "asmi",
+      "email": "asmitha@gmail.com",
+      "password": "asmitha",
+      "confirmPassword": "asmitha",
+      "fullName": "Asmitha",
+      "address": "KKP",
+      "phoneNumber": "9456783201",
+      "id": 10
+    },
+    {
+      "username": "asmi",
+      "password": "asmitha",
+      "id": 11
+    },
+    {
+      "username": "abiemail2000@gmail.com",
+      "password": "abiemail2000",
+      "id": 12
+    },
+    {
+      "username": "abiemail2000@gmail.com",
+      "password": "abiemail2000",
+      "id": 13
+    },
+    {
+      "username": "abiemail2000@gmail.com",
+      "password": "abiemail2000",
+      "id": 14
+    },
+    {
+      "username": "abiemail2000@gmail.com",
+      "password": "abiemail2000",
+      "id": 15
+    },
+    {
+      "username": "abiemail2000@gmail.com",
+      "password": "abiemail2000",
+      "id": 16
+    },
+    {
+      "username": "abi",
+      "email": "abiemail@gmail.com",
+      "password": "abinaya",
+      "confirmPassword": "abinaya",
+      "fullName": "Abinaya",
+      "address": "KKP",
+      "phoneNumber": "9342090689",
+      "id": 17
+    },
+    {
+      "username": "abi",
+      "email": "abiemail@gmail.com",
+      "password": "abinaya",
+      "confirmPassword": "abinaya",
+      "fullName": "Abinaya",
+      "address": "KKP",
+      "phoneNumber": "9342090689",
+      "id": 18
+    },
+    {
+      "username": "abinaya",
+      "email": "abinaya@gmail.com",
+      "password": "abinaya",
+      "confirmPassword": "abinaya",
+      "fullName": "Abinaya",
+      "address": "west Street",
+      "phoneNumber": "9342090689",
+      "id": 19
+    },
+    {
+      "username": "abinaya",
+      "email": "abinaya@gmail.com",
+      "password": "abinaya",
+      "confirmPassword": "abinaya",
+      "fullName": "Abinaya",
+      "address": "KKP",
+      "phoneNumber": "9342090689",
+      "id": 20
+    },
+    {
+      "username": "abinaya",
+      "password": "abinaya",
+      "id": 21
+    },
+    {
+      "username": "abinaya",
+      "password": "abinaya",
+      "id": 22
+    },
+    {
+      "username": "abiemail2000@gmail.com",
+      "password": "abiemail2000",
+      "id": 23
+    },
+    {
+      "username": "abiemail2000@gmail.com",
+      "password": "abiemail2000",
+      "id": 24
+    },
+    {
+      "username": "abiemail2000@gmail.com",
+      "password": "abiemail2000",
+      "id": 25
+    },
+    {
+      "username": "abiemail2000@gmail.com",
+      "password": "abiemail2000",
+      "id": 26
+    },
+    {
+      "username": "abiemail2000@gmail.com",
+      "password": "abiemail2000",
+      "id": 27
+    },
+    {
+      "username": "abiemail2000@gmail.com",
+      "password": "abiemail2000",
+      "id": 28
+    },
+    {
+      "username": "abiemail2000@gmail.com",
+      "password": "abiemail2000",
+      "id": 29
+    },
+    {
+      "username": "abiemail2000@gmail.com",
+      "password": "abiemail2000",
+      "id": 30
+    },
+    {
+      "username": "abiemail2000@gmail.com",
+      "password": "abiemail2000",
+      "id": 31
+    },
+    {
+      "username": "abiemail2000@gmail.com",
+      "password": "abiemail2000",
+      "id": 32
+    },
+    {
+      "username": "abiemail2000@gmail.com",
+      "password": "abiemail2000",
+      "id": 33
+    },
+    {
+      "username": "abiemail2000@gmail.com",
+      "password": "abiemail2000",
+      "id": 34
+    },
+    {
+      "username": "abiemail2000@gmail.com",
+      "password": "abiemail2000",
+      "id": 35
+    },
+    {
+      "username": "abiemail2000@gmail.com",
+      "password": "abiemail2000",
+      "id": 36
+    },
+    {
+      "username": "abiemail2000@gmail.com",
+      "password": "abiemail2000",
+      "id": 37
+    }
+  ]
+}

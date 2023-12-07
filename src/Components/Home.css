@@ -1,0 +1,17 @@
+.image-container {
+    position: relative;
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+  }
+  .animated-font{
+  color: repeating-linear-gradient(rgb(165, 48, 68),rgb(74, 155, 225),rgb(221, 99, 99));
+}
+  
+ 
