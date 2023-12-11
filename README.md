@@ -29,7 +29,7 @@ Follow these steps to get a copy of the project up and running on your local mac
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/your-username/Ecommerce-Website.git
-   cd Ecommerce-Website
+   cd Ecommerce-Website-Using-React
 Install dependencies:
 
 bash
