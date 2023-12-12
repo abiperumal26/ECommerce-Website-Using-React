@@ -30,21 +30,20 @@ Follow these steps to get a copy of the project up and running on your local mac
    ```bash
    git clone https://github.com/your-username/Ecommerce-Website.git
    cd Ecommerce-Website-Using-React
+   json-server --watch data/db.json --port 3001
 Install dependencies:
 
 bash
 Copy code
 npm install
+npm install -g json-server
 Run the development server:
 
 bash
 Copy code
 npm start
 Open your browser and visit http://localhost:3000
-User Credentials
-Username: demo_user
-Password: demo_password
-Demo
+open your browser and visit http://localhost:3001/users
 Check out the live demo here.
 
 Technologies Used
