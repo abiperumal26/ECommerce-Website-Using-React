@@ -7,6 +7,7 @@ const AddToCart = () => {
   const [orderNumber, setOrderNumber] = useState(null);
   const [userDetails, setUserDetails] = useState(null);
   const [paymentMethod, setPaymentMethod] = useState('');
+  const [days, setDays] = useState(1);
 
   const UserDetailsForm = ({ onSubmit }) => {
     const [name, setName] = useState('');
@@ -57,7 +58,13 @@ const AddToCart = () => {
     setUserDetails(userDetails);
     const randomOrderNumber = Math.floor(Math.random() * 1000000) + 1;
     setOrderNumber(randomOrderNumber);
+    order(); // Call the order function to set random delivery days
     setShowThankYou(true);
+  };
+
+  let order = () => {
+    let day = Math.floor(Math.random() * 10 + 1);
+    setDays(day);
   };
 
   return (
@@ -65,7 +72,7 @@ const AddToCart = () => {
       {showThankYou ? (
         <div className="thank-you">
           <p>Thank you for your order! Your order number is {orderNumber}.</p>
-          <p>Your product will be delivered within 5 days.</p>
+          <p>Your product will be delivered within {days} days.</p>
         </div>
       ) : (
         <div className="app-content">
