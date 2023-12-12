@@ -14,8 +14,6 @@ import furni10 from './Images/furni10.webp';
 import furni11 from './Images/furni11.webp';
 import furni12 from './Images/furni12.webp';
 import './Gadget.css';
-
-// Placeholder data for products
 const products = [
   { id: 1, name: 'Single Sofa', price: '4,000', image: furni1 },
   { id: 2, name: 'Single Cushion', price: '₹5,000', image: furni2 },
@@ -29,13 +27,11 @@ const products = [
   { id: 10, name: 'Wooden cart', price: '₹11,000', image: furni10 },
   { id: 11, name: 'Cupboard', price: '₹5,000', image: furni11 },
   { id: 12, name: 'Queen Size Bed', price: '₹18,000', image: furni12 },
-  // Add more products as needed
 ];
 
 const Furniture = () => {
   const [cartItems, setCartItems] = useState([]);
   const [showCart, setShowCart] = useState(false);
-  // const navigate = useNavigate(); // eslint-disable-line
 
   const handleAddToCart = (product) => {
     setCartItems((prevCartItems) => [...prevCartItems, { ...product, quantity: 1 }]);
