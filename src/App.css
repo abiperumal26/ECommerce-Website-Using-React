@@ -41,7 +41,6 @@ nav {
   background-color: #555;
 }
 
-/* Add your responsive styles here */
 @media screen and (max-width: 768px) {
   .navigation {
     flex-direction: column;
@@ -97,17 +96,14 @@ ul.navigation li a:hover {
 }
 
 .login-button:hover, .logout-button:hover {
-  background-color: #45a049; /* Darker green or darker red on hover */
+  background-color: #45a049; 
 }
-/* App.css */
-
-/* ... (previous styles) ... */
 
 .registration-button {
-  background-color: #ff69b4; /* Pink */
+  background-color: #ff69b4;
 }
 
 .registration-button:hover {
-  background-color: #ff1493; /* Darker pink on hover */
+  background-color: #ff1493; 
 }
 
