@@ -1,4 +1,3 @@
-// LoginForm.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LoginForm.css';
@@ -28,9 +27,7 @@ const LoginForm = ({ onLogin }) => {
         console.log('Login successful!');
         setLoginError('');
 
-        onLogin(); // Call the onLogin function passed as a prop
-
-        // Redirect to the products page after successful login
+        onLogin(); 
         navigate('/products');
       } else {
         const errorData = await response.json();
