@@ -2,12 +2,12 @@
   "users": [
     {
       "id": 1,
-      "username": "exampleUser",
-      "email": "user@example.com",
-      "password": "password123",
-      "fullName": "John Doe",
-      "address": "123 Main St",
-      "phoneNumber": "555-1234"
+      "username": "Abi",
+      "email": "abinaya@example.com",
+      "password": "abinaya123",
+      "fullName": "Abinaya",
+      "address": "123 Main St,chennai",
+      "phoneNumber": "9576473859"
     },
     {
       "username": "abi",
@@ -16,12 +16,12 @@
       "confirmPassword": "abinaya",
       "fullName": "abinaya",
       "address": "KKK",
-      "phoneNumber": "9342090689",
+      "phoneNumber": "9390586989",
       "id": 2
     },
     {
       "username": "abi",
-      "email": "abiperumal2000@gmail.com",
+      "email": "abiperumal20@gmail.com",
       "password": "abiperumal",
       "confirmPassword": "abiperumal",
       "fullName": "Abinaya",
@@ -36,7 +36,7 @@
       "confirmPassword": "varshith",
       "fullName": "Varshith",
       "address": "KRP",
-      "phoneNumber": "9342090689",
+      "phoneNumber": "9230958679",
       "id": 4
     },
     {
@@ -66,7 +66,7 @@
       "confirmPassword": "Varshith",
       "fullName": "Varshith",
       "address": "KRP",
-      "phoneNumber": "9342090689",
+      "phoneNumber": "9037482619",
       "id": 8
     },
     {
@@ -121,7 +121,7 @@
       "confirmPassword": "abinaya",
       "fullName": "Abinaya",
       "address": "KKP",
-      "phoneNumber": "9342090689",
+      "phoneNumber": "9437582949",
       "id": 17
     },
     {
@@ -131,7 +131,7 @@
       "confirmPassword": "abinaya",
       "fullName": "Abinaya",
       "address": "KKP",
-      "phoneNumber": "9342090689",
+      "phoneNumber": "9940583949",
       "id": 18
     },
     {
@@ -141,7 +141,7 @@
       "confirmPassword": "abinaya",
       "fullName": "Abinaya",
       "address": "west Street",
-      "phoneNumber": "9342090689",
+      "phoneNumber": "9503525675",
       "id": 19
     },
     {
@@ -151,7 +151,7 @@
       "confirmPassword": "abinaya",
       "fullName": "Abinaya",
       "address": "KKP",
-      "phoneNumber": "9342090689",
+      "phoneNumber": "91234059684",
       "id": 20
     },
     {
