@@ -1,4 +1,3 @@
-// Gadget.js
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import gad1 from './Images/gad1.webp';
@@ -14,8 +13,6 @@ import gad10 from './Images/gad10.webp';
 import gad11 from './Images/gad11.webp';
 import gad12 from './Images/gad12.webp';
 import './Gadget.css';
-
-// Placeholder data for products
 const products = [
   { id: 1, name: 'Vivo 5g', price: '₹25,000', image: gad1 },
   { id: 2, name: 'Vivo 5g with black', price: '₹28,000', image: gad2 },
@@ -35,7 +32,6 @@ const products = [
 const Gadget = () => {
   const [cartItems, setCartItems] = useState([]);
   const [showCart, setShowCart] = useState(false);
-  // const navigate = useNavigate(); // eslint-disable-line
 
   const handleAddToCart = (product) => {
     setCartItems((prevCartItems) => [...prevCartItems, { ...product, quantity: 1 }]);
