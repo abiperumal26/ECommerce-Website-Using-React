@@ -1,4 +1,3 @@
-// RegistrationForm.js
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './RegistrationForm.css';
@@ -97,7 +96,6 @@ const RegistrationForm = ({ onRegistration }) => {
             phoneNumber: '',
           });
 
-          // Automatically navigate to the login page after successful registration
           navigate('/login');
         } else {
           const errorData = await response.json();
@@ -110,11 +108,6 @@ const RegistrationForm = ({ onRegistration }) => {
       console.log('Registration failed. Please check the form for errors.');
     }
   };
-
-  useEffect(() => {
-    // Additional setup logic if needed
-  }, []);
-
   return (
     <div className="registration-container">
       <form onSubmit={handleSubmit} autoComplete="off">
