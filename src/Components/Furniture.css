@@ -1,4 +1,3 @@
-/* Furniture.css */
 
 .furniture-container {
     display: flex;
@@ -67,38 +66,37 @@
     margin-top: 10px;
     text-align: center;
   }
-  /* Gadget.css */
 
 .button-row {
   display: flex;
   justify-content: space-around;
-  margin-top: 20px; /* Adjust the margin-top as needed */
+  margin-top: 20px; 
 }
 
 .open-cart-button,
 .view-cart-link {
   padding: 10px;
-  background-color: #3498db; /* Adjust the background color as needed */
-  color: #fff; /* Adjust the text color as needed */
+  background-color: #3498db; 
+  color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
 }
-/* Gadget.css */
+
 
 .button-row {
-  clear: both; /* Add this line to clear floated elements */
+  clear: both; 
   display: flex;
   justify-content: space-around;
-  margin-top: 20px; /* Adjust the margin-top as needed */
+  margin-top: 20px; 
 }
 
 .open-cart-button,
 .view-cart-link {
   padding: 10px;
-  background-color: #3498db; /* Adjust the background color as needed */
-  color: #fff; /* Adjust the text color as needed */
+  background-color: #3498db; 
+  color: #fff; 
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -107,13 +105,13 @@
 
 .open-cart-button:hover,
 .view-cart-link:hover {
-  background-color: #2980b9; /* Adjust the hover background color as needed */
+  background-color: #2980b9; 
 }
 
 
 .open-cart-button:hover,
 .view-cart-link:hover {
-  background-color: #2980b9; /* Adjust the hover background color as needed */
+  background-color: #2980b9;
 }
 
   
