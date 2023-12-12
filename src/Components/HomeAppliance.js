@@ -1,4 +1,3 @@
-// HomeAppliance.js
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import H1 from './Images/H1.webp';
@@ -14,8 +13,6 @@ import H10 from './Images/H10.webp';
 import H11 from './Images/H11.webp';
 import H12 from './Images/H12.webp';
 import './HomeAppli.css';
-
-// Placeholder data for products
 const products = [
   { id: 1, name: 'Diamond Drum Front Load', price: '₹28,000', image: H1 },
   { id: 2, name: 'Livpure', price: '₹15,000', image: H2 },
@@ -35,7 +32,6 @@ const products = [
 const HomeAppliance = () => {
   const [cartItems, setCartItems] = useState([]);
   const [showCart, setShowCart] = useState(false);
-  // const navigate = useNavigate(); // eslint-disable-line
 
   const handleAddToCart = (product) => {
     setCartItems((prevCartItems) => [...prevCartItems, { ...product, quantity: 1 }]);
