@@ -1,4 +1,3 @@
-// App.js
 import React, { useState } from 'react';
 import { Routes, Route, Link, Navigate } from 'react-router-dom';
 
@@ -20,17 +19,17 @@ const App = () => {
 
   const handleLogin = () => {
     setLoggedIn(true);
-    // Add your login logic here
+   
   };
 
   const handleLogout = () => {
     setLoggedIn(false);
-    // Add your logout logic here
+   
   };
 
   const handleRegistration = (username) => {
     console.log(`User ${username} registered successfully!`);
-    // Add any registration logic you need
+   
   };
 
   return (
@@ -42,7 +41,7 @@ const App = () => {
           <li><Link to="/registration">Registration</Link></li>
           {isLoggedIn ? (
             <>
-              {/* Remove the "Add To Cart" link from the navigation */}
+              
               <li onClick={handleLogout} className="logout-button">Logout</li>
             </>
           ) : (
