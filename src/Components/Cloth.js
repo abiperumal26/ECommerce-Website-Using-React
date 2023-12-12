@@ -1,4 +1,4 @@
-// Cloth.js
+
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import dress1 from './Images/cloth.webp';
@@ -14,8 +14,6 @@ import dress10 from './Images/dress10.webp';
 import dress11 from './Images/dress11.webp';
 import dress12 from './Images/dress12.webp';
 import './Gadget.css';
-
-// Placeholder data for products
 const products = [
   { id: 1, name: 'Frock', price: '₹500', image: dress1 },
   { id: 2, name: 'Top with Medi', price: '₹800', image: dress2 },
@@ -35,8 +33,6 @@ const products = [
 const Cloth = () => {
   const [cartItems, setCartItems] = useState([]);
   const [showCart, setShowCart] = useState(false);
-  // const navigate = useNavigate(); // eslint-disable-line
-
   const handleAddToCart = (product) => {
     setCartItems((prevCartItems) => [...prevCartItems, { ...product, quantity: 1 }]);
   };
