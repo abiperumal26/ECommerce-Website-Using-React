@@ -1,4 +1,3 @@
-// Foot.js
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import slip1 from './Images/slip1.webp';
@@ -14,8 +13,6 @@ import slip10 from './Images/slip10.webp';
 import slip11 from './Images/slip11.webp';
 import slip12 from './Images/slip12.webp';
 import './Gadget.css';
-
-// Placeholder data for products
 const products = [
   { id: 1, name: 'Flat Wear', price: '₹500', image: slip1 },
   { id: 2, name: 'Leather Flat', price: '₹900', image: slip2 },
@@ -35,8 +32,6 @@ const products = [
 const Foot = () => {
   const [cartItems, setCartItems] = useState([]);
   const [showCart, setShowCart] = useState(false);
-  // const navigate = useNavigate(); // eslint-disable-line
-
   const handleAddToCart = (product) => {
     setCartItems((prevCartItems) => [...prevCartItems, { ...product, quantity: 1 }]);
   };
