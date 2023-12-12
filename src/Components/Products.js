@@ -1,5 +1,3 @@
-// Products.js
-
 import React from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import pro1 from './Images/furni4.webp';
