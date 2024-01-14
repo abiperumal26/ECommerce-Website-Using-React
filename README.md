@@ -28,7 +28,7 @@ Follow these steps to get a copy of the project up and running on your local mac
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/Ecommerce-Website.git
+  git clone https://github.com/abiperumal26/Ecommerce-Website-Using-React.git
    cd Ecommerce-Website-Using-React
    json-server --watch data/db.json --port 3001
 Install dependencies:
