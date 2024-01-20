@@ -22,7 +22,7 @@ const products = [
   { id: 6, name: 'Water Purifier', price: '₹15,000', image: H6 },
   { id: 7, name: 'Machine', price: '₹20,000', image: H7 },
   { id: 8, name: 'IFB', price: '₹35,000', image: H8 },
-  { id: 9, name: 'Vaccum', price: '₹9,000', image: H9 },
+  { id: 9, name: 'Vacuum', price: '₹9,000', image: H9 },
   { id: 10, name: 'Venus', price: '₹10,000', image: H10 },
   { id: 11, name: 'Filter', price: '₹8,000', image: H11 },
   { id: 12, name: 'Ac', price: '₹45,000', image: H12 },
@@ -83,14 +83,22 @@ const HomeAppliance = () => {
           <button onClick={handleCloseCart}>Close Cart</button>
         </div>
       )}
+      
+      <div className='button-row'>
 
-      <button onClick={handleOpenCart} className="open-cart-button">
-        Open Cart
-      </button>
-      <Link to="/addToCart" className="view-cart-link">
-        View Cart
-      </Link>
-    </div>
+<button onClick={handleOpenCart} className="open-cart-button">
+  Open Cart
+</button>
+
+
+
+<Link to="/addToCart" className='view' >
+  View Cart
+</Link>
+
+</div>
+      </div>
+    
   );
 };
 

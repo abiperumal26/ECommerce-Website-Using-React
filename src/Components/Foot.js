@@ -83,12 +83,19 @@ const Foot = () => {
         </div>
       )}
 
-      <button onClick={handleOpenCart} className="open-cart-button">
-        Open Cart
-      </button>
-      <Link to="/addToCart" className="view-cart-link">
-        View Cart
-      </Link>
+<div className='button-row'>
+
+<button onClick={handleOpenCart} className="open-cart-button">
+  Open Cart
+</button>
+
+
+
+<Link to="/addToCart" className='view' >
+  View Cart
+</Link>
+
+</div>
     </div>
   );
 };

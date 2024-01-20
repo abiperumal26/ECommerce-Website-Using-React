@@ -2,7 +2,7 @@
 .gadture-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    /* justify-content: space-between; */
   }
   
   .gadture-card {
@@ -21,6 +21,7 @@
    
     padding: 10px;
     border: 1px solid pink;
+  
   }
   
   .product-details {
@@ -64,6 +65,7 @@
     width: 50px;
     border-radius: 5px;
     margin-right: 10px;
+    
   }
   
   .view-cart-link {
@@ -76,4 +78,23 @@
     border: none;
     text-decoration: none;
   }
+  .button-row{
+    margin-top: -65%;
+    margin-left:30px;
+    
+  }
+  .button-row .view{
+    margin-left: 30px;
+    text-decoration: none;
+    color:rgb(241, 240, 240);
+    background-color: rgb(84, 122, 225);
+    padding: 10px;
+    border-radius: 5px;
+    font-size:10px;
+  }
+  .open-cart-button{
+    font-size: 10px;
+  }
+  
+ 
   

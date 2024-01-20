@@ -14,7 +14,12 @@ body {
 nav {
   background-color: #333;
 }
-
+.logout-button{
+  font-size: 13px;
+  font-weight: bold;
+  background-color: violet;
+  color:black;
+}
 
 .navigation {
   list-style: none;
@@ -23,6 +28,7 @@ nav {
   display: flex;
  
   align-items: center;
+ 
 }
 
 .navigation a {
@@ -35,10 +41,16 @@ nav {
 
 .navigation li {
   cursor: pointer;
+  padding: 10px;
 }
 
 .navigation li:hover {
   background-color: #555;
+}
+.navigation{
+  
+  
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -88,11 +100,14 @@ ul.navigation li a:hover {
 }
 
 .login-button {
-  background-color: #4caf50; /* Green */
+  background-color: #4caf50; 
 }
 
 .logout-button {
-  background-color: #f44336; /* Red */
+  background-color: #cd1eec; 
+  border-radius: 5px;
+  padding: 6px;
+
 }
 
 .login-button:hover, .logout-button:hover {

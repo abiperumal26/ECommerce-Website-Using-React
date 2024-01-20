@@ -27,11 +27,13 @@ const LoginForm = ({ onLogin }) => {
         console.log('Login successful!');
         setLoginError('');
 
-        onLogin(); 
+        onLogin();
+        // Navigate to '/products' after successful login
         navigate('/products');
       } else {
-        const errorData = await response.json();
-        setLoginError(errorData.message || 'Login failed. Please check your credentials.');
+        const errorText = await response.text(); // Get the text response
+        console.error('Error during login:', errorText);
+        setLoginError('Login failed. Please check your credentials.');
       }
     } catch (error) {
       console.error('Error during login:', error);
@@ -72,6 +74,7 @@ const LoginForm = ({ onLogin }) => {
             value={loginFormData.password}
             onChange={handleChange}
             required
+            autoComplete="current-password" 
           />
         </div>
         <button type="submit">Login</button>

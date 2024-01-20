@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './RegistrationForm.css';
 
 const RegistrationForm = ({ onRegistration }) => {
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     username: '',
     email: '',
@@ -24,7 +26,6 @@ const RegistrationForm = ({ onRegistration }) => {
   });
 
   const [registrationSuccess, setRegistrationSuccess] = useState(false);
-  const navigate = useNavigate();
 
   const validateForm = () => {
     let valid = true;
@@ -84,9 +85,8 @@ const RegistrationForm = ({ onRegistration }) => {
         if (response.ok) {
           console.log('Registration successful!');
           setRegistrationSuccess(true);
-          onRegistration(formData.username); // Notify parent component about registration
+          onRegistration(formData.username);
           setFormData({
-            // Clear the form after successful registration
             username: '',
             email: '',
             password: '',
@@ -95,8 +95,6 @@ const RegistrationForm = ({ onRegistration }) => {
             address: '',
             phoneNumber: '',
           });
-
-          navigate('/login');
         } else {
           const errorData = await response.json();
           console.error('Failed to register user:', errorData.message);
@@ -108,6 +106,7 @@ const RegistrationForm = ({ onRegistration }) => {
       console.log('Registration failed. Please check the form for errors.');
     }
   };
+
   return (
     <div className="registration-container">
       <form onSubmit={handleSubmit} autoComplete="off">
@@ -155,6 +154,8 @@ const RegistrationForm = ({ onRegistration }) => {
 
         <button type="submit">Register</button>
       </form>
+
+      {registrationSuccess && navigate('/login')}
     </div>
   );
 };

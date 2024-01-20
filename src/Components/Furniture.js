@@ -89,9 +89,13 @@ const Furniture = () => {
       <button onClick={handleOpenCart} className="open-cart-button">
         Open Cart
       </button>
-      <Link to="/addToCart" className="view-cart-link">
+    
+      
+      
+      <Link to="/addToCart" className='view' >
         View Cart
       </Link>
+    
     </div>
     </div>
     );

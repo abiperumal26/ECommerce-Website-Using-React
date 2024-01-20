@@ -6,7 +6,7 @@ const Home = () => {
     <div>
       <header>
         <nav>
-         
+          {/* Add your navigation content here if needed */}
         </nav>
       </header>
       <main>
