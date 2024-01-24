@@ -1,11 +1,11 @@
 import React from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import pro1 from './Images/furni4.webp';
-import pro2 from './Images/dress10.webp';
-import pro3 from './Images/gad12.webp';
-import pro4 from './Images/H10.webp';
-import pro5 from './Images/slip13.webp';
-import pro6 from './Images/stat10.webp';
+import pro1 from './Images/furni112.webp';
+import pro2 from './Images/shirt.webp';
+import pro3 from './Images/mob.webp';
+import pro4 from './Images/Home.jpg';
+import pro5 from './Images/foot.webp';
+import pro6 from './Images/magnet.webp';
 import './Products.css';
 
 const Products = () => {
@@ -23,9 +23,10 @@ const Products = () => {
   const handleProductClick = (route) => {
     navigate(route);
   };
-
   return (
-    <div className="product-container">
+    <div className="product-container" style={{
+      marginTop:'50px'
+    }}>
       {products.map((product) => (
         <div key={product.id} className="product-card">
           <Link to={product.route}>

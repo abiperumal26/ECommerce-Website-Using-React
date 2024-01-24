@@ -1,79 +1,120 @@
 
 .gadture-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.gadture-card {
+  text-align: center;
+  margin: 10px;
+}
+
+.gadture-image-container {
+  position: relative;
+}
+
+.gadture-image {
+  height: 350px;
+  width: 350px;
+  border-radius: 15px;
+ 
+  padding: 10px;
+ 
+
+}
+
+.product-details {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.add-to-cart-button {
+  background-color: rgb(137, 9, 31);
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.shopping-cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid pink;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cart-item img {
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  margin-right: 10px;
   
-  .gadture-card {
-    text-align: center;
-    margin: 10px;
-  }
+}
+
+.view-cart-link {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: pink;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  text-decoration: none;
+}
+.button-row{
+  margin-top: -151%;
+  margin-left:70%;
   
-  .gadture-image-container {
-    position: relative;
-  }
-  
-  .gadture-image {
-    height: 300px;
-    width: 250px;
-    border-radius: 15px;
-    row-gap: 50px;
-    padding: 10px;
-    border: 1px solid pink;
-  }
-  
-  .product-details {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: white;
-    padding: 5px;
-    border-radius: 5px;
-  }
-  
-  .add-to-cart-button {
-    background-color: pink;
-    color: white;
-    padding: 5px 10px;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  
-  .shopping-cart {
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: white;
-    padding: 20px;
-    border: 1px solid pink;
-    max-height: 100vh;
-    overflow-y: auto;
-  }
-  
-  .cart-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .cart-item img {
-    height: 50px;
-    width: 50px;
-    border-radius: 5px;
-    margin-right: 10px;
-  }
-  
-  .view-cart-link {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    background-color: pink;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    text-decoration: none;
-  }
-  
+}
+.button-row .view{
+  margin-left: 30px;
+  text-decoration: none;
+  color:rgb(241, 240, 240);
+  background-color: rgb(84, 122, 225);
+  padding: 10px;
+  border-radius: 5px;
+  font-size:10px;
+}
+.open-cart-button{
+  font-size: 10px;
+}
+
+
+.gadture-card .gadture-image{
+
+width: 350px;
+height: 350px;
+height: auto;
+border: none;
+
+}
+.gadture-card{
+border: 1px solid rgb(9, 44, 57);
+
+padding: 50px;
+border-radius: 44px;
+}
+
+.gadture-card .add-to-cart-button{
+background-color: rgb(243, 64, 64);
+padding: 10px;
+margin-top: 20px;
+}
+

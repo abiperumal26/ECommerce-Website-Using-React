@@ -2,7 +2,7 @@
 .gadture-container {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
+    justify-content: space-between;
   }
   
   .gadture-card {
@@ -20,7 +20,7 @@
     border-radius: 15px;
    
     padding: 10px;
-    border: 1px solid pink;
+   
   
   }
   
@@ -35,9 +35,9 @@
   }
   
   .add-to-cart-button {
-    background-color: pink;
+    background-color: rgb(137, 9, 31);
     color: white;
-    padding: 5px 10px;
+    padding: 10px 10px;
     border: none;
     cursor: pointer;
     margin-top: 10px;
@@ -79,8 +79,8 @@
     text-decoration: none;
   }
   .button-row{
-    margin-top: -65%;
-    margin-left:30px;
+    margin-top: -191%;
+    margin-left:70%;
     
   }
   .button-row .view{
@@ -95,6 +95,26 @@
   .open-cart-button{
     font-size: 10px;
   }
+
   
+ .gadture-card .gadture-image{
  
+  width: 350px;
+  height: 350px;
+  height: auto;
+ border: none;
+
+ }
+ .gadture-card{
+  border: 1px solid rgb(9, 44, 57);
+
+ padding: 50px;
+ border-radius: 44px;
+ }
+
+ .gadture-card .add-to-cart-button{
+  background-color: rgb(243, 64, 64);
+  padding: 10px;
+  margin-top: 20px;
+ }
   

@@ -21,7 +21,9 @@ const AddToCart = () => {
     };
 
     return (
-      <form onSubmit={handleSubmit} className="registration-form">
+      <form onSubmit={handleSubmit} className="registration-form" style={{
+        marginTop:'80px'
+      }}>
         <div className="form-group">
           <label htmlFor="name">Name:</label>
           <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} required />
@@ -68,7 +70,9 @@ const AddToCart = () => {
   };
 
   return (
-    <div className="app">
+    <div className="app" style={{
+      marginTop:'40px'
+    }}>
       {showThankYou ? (
         <div className="thank-you">
           <p>Thank you for your order! Your order number is {orderNumber}.</p>

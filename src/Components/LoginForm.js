@@ -50,7 +50,9 @@ const LoginForm = ({ onLogin }) => {
   };
 
   return (
-    <div className="login-container">
+    <div className="login-container" style={{
+      marginTop:'100px'
+    }}>
       <form onSubmit={handleLoginSubmit} autoComplete="off">
         <h2>Login</h2>
         {loginError && <p className="error-message">{loginError}</p>}

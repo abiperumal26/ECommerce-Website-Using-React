@@ -108,7 +108,9 @@ const RegistrationForm = ({ onRegistration }) => {
   };
 
   return (
-    <div className="registration-container">
+    <div className="registration-container" style={{
+      marginTop:'100px'
+    }}>
       <form onSubmit={handleSubmit} autoComplete="off">
         {registrationSuccess && (
           <div className="success-message">

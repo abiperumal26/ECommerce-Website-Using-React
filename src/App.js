@@ -34,8 +34,13 @@ const App = () => {
 
   return (
     <div>
-      <nav>
-        <ul className="navigation">
+      <nav style={{
+  marginTop:'10px',
+  position:'fixed',
+  top:0,
+  width:'100%'
+}}>
+        <ul className="navigation" >
           <li><Link to="/">Home</Link></li>
           {isLoggedIn && <li><Link to="/products">Products</Link></li>}
           <li><Link to="/registration">Registration</Link></li>

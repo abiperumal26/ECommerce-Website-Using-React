@@ -1,31 +1,33 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import slip1 from './Images/slip1.webp';
-import slip2 from './Images/slip2.webp';
-import slip3 from './Images/slip3.webp';
-import slip4 from './Images/slip4.webp';
-import slip5 from './Images/slip5.webp';
-import slip6 from './Images/slip6.webp';
-import slip7 from './Images/slip7.webp';
-import slip8 from './Images/slip8.webp';
-import slip9 from './Images/slip9.webp';
-import slip10 from './Images/slip10.webp';
-import slip11 from './Images/slip11.webp';
-import slip12 from './Images/slip12.webp';
-import './Gadget.css';
+import slip1 from './Images/slipper1.webp';
+import slip2 from './Images/slipper5.webp';
+import slip3 from './Images/slipper3.webp';
+import slip4 from './Images/sandle3.jpg';
+import slip5 from './Images/sandle1.jpg';
+import slip6 from './Images/sandl2.jpg';
+import slip7 from './Images/shoes1.webp';
+import slip12 from './Images/shoes5.webp';
+import slip8 from './Images/shoes4.webp';
+
+import slip9 from './Images/shoes3.webp';
+import slip10 from './Images/wear4.webp';
+import slip11 from './Images/wear2.webp';
+
+import './Foot.css';
 const products = [
   { id: 1, name: 'Flat Wear', price: '₹500', image: slip1 },
-  { id: 2, name: 'Leather Flat', price: '₹900', image: slip2 },
-  { id: 3, name: 'Modern Flat', price: '₹700', image: slip3 },
+  { id: 2, name: 'BataWomens Alaska Sandal Heels', price: '₹450', image: slip2 },
+  { id: 3, name: 'XE LooksBlock heel and Stylish Slippers', price: '₹700', image: slip3 },
   { id: 4, name: 'Heels', price: '₹500', image: slip4 },
-  { id: 5, name: 'Stylish Flat', price: '₹600', image: slip5 },
-  { id: 6, name: 'flat', price: '₹400', image: slip6 },
-  { id: 7, name: 'war flat', price: '₹600', image: slip7 },
-  { id: 8, name: 'sponch wear', price: '₹300', image: slip8 },
-  { id: 9, name: 'flat', price: '₹300', image: slip9 },
-  { id: 10, name: 'closed flat', price: '₹500', image: slip10 },
-  { id: 11, name: 'flat ', price: '₹300', image: slip11 },
-  { id: 12, name: 'flat', price: '₹400', image: slip12 },
+  { id: 5, name: 'BataWomen Deva Thong E Heeled Sandal', price: '₹725', image: slip5 },
+  { id: 6, name: 'STICYChappal for Women ', price: '₹599', image: slip6 },
+  { id: 7, name: 'OFF LIMITS Men Kairo Running, Sports Shoes', price: '₹1,700', image: slip7 },
+  { id: 8, name: 'ASIAN Shoe Casual Sneaker', price: '₹725', image: slip8 },
+  { id: 9, name: 'ASIAN Mens Wonder', price: '₹599', image: slip9 },
+  { id: 10, name: 'Mens Everest-02 Sports Trekking & Hiking', price: '₹1,044', image: slip10 },
+  { id: 11, name: ' Skechers', price: '₹1,089', image: slip11 },
+  { id: 12, name: 'Bersache Lightweight Casual Sneaker', price: '₹1,100', image: slip12 },
   // Add more products as needed
 ];
 
@@ -53,7 +55,9 @@ const Foot = () => {
   };
 
   return (
-    <div className="gadture-container">
+    <div className="gadture-container" style={{
+      marginTop:'80px'
+    }}>
       {products.map((product) => (
         <div key={product.id} className="gadture-card">
           <img src={product.image} alt={product.name} className="gadture-image" />
@@ -83,7 +87,11 @@ const Foot = () => {
         </div>
       )}
 
-<div className='button-row'>
+<div className='button-row' style={{
+  marginTop:'25px',
+  position:'fixed',
+  top:0
+}}>
 
 <button onClick={handleOpenCart} className="open-cart-button">
   Open Cart

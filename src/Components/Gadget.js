@@ -1,28 +1,30 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import gad1 from './Images/gad1.webp';
-import gad2 from './Images/gad2.webp';
-import gad3 from './Images/gad3.webp';
-import gad4 from './Images/gad4.webp';
-import gad5 from './Images/gad5.webp';
-import gad6 from './Images/gad6.webp';
-import gad7 from './Images/gad7.webp';
-import gad8 from './Images/gad8.webp';
-import gad9 from './Images/gad9.webp';
+import gad1 from './Images/samsung galaxy.webp';
+import gad2 from './Images/motorola.jpg';
+import gad3 from './Images/realme.webp';
+import gad4 from './Images/red.webp';
+import gad5 from './Images/Appl.jpg';
+import gad6 from './Images/lenovo.webp';
+import gad7 from './Images/dell.jpg';
+import gad8 from './Images/samiii.jpg';
+import gad9 from './Images/poco.jpg';
 import gad10 from './Images/gad10.webp';
 import gad11 from './Images/gad11.webp';
 import gad12 from './Images/gad12.webp';
 import './Gadget.css';
 const products = [
-  { id: 1, name: 'Vivo 5g', price: '₹25,000', image: gad1 },
-  { id: 2, name: 'Vivo 5g with black', price: '₹28,000', image: gad2 },
-  { id: 3, name: 'Redmi 12C', price: '₹23,000', image: gad3 },
-  { id: 4, name: 'AA', price: '₹18,000', image: gad4 },
-  { id: 5, name: 'Zebronics', price: '₹35,000', image: gad5 },
-  { id: 6, name: 'Acer', price: '₹40,000', image: gad6 },
-  { id: 7, name: 'HP', price: '₹58,000', image: gad7 },
-  { id: 8, name: 'HP Folding', price: '₹87,000', image: gad8 },
-  { id: 9, name: 'Smart watch', price: '₹9,000', image: gad9 },
+  { id: 1, name: 'Galaxy Ultra', price: '₹55,000', image: gad1 },
+  { id: 9, name: 'PCOCO C51', price: '₹22,000', image: gad9 },
+  { id: 2, name: 'Mototola', price: '₹65,000', image: gad2 },
+  { id: 3, name: 'Realme Narzo', price: '₹23,000', image: gad3 },
+  { id: 4, name: 'Redmi 13C', price: '₹25,000', image: gad4 },
+ 
+  { id: 5, name: 'Iphone', price: '₹75,000', image: gad5 },
+  { id: 6, name: 'Lenovo Ideapad', price: '₹40,000', image: gad6 },
+  { id: 7, name: 'HP Folding', price: '₹58,000', image: gad7 },
+ 
+  { id: 8, name: 'SAMSUNG', price: '₹87,000', image: gad8 },
   { id: 10, name: 'Smart watch with ash', price: '₹7,000', image: gad10 },
   { id: 11, name: 'Smart watch with black', price: '₹5,000', image: gad11 },
   { id: 12, name: 'Smart Watch with black', price: '₹10,00', image: gad12 },
@@ -54,7 +56,9 @@ const Gadget = () => {
   };
 
   return (
-    <div className="gadture-container">
+    <div className="gadture-container" style={{
+      marginTop:'80px'
+    }}>
       {products.map((product) => (
         <div key={product.id} className="gadture-card">
           <img src={product.image} alt={product.name} className="gadture-image" />
@@ -84,7 +88,12 @@ const Gadget = () => {
         </div>
       )}
 
-<div className='button-row'>
+<div className='button-row' style={{
+  marginTop:'25px',
+  position:'fixed',
+  top:0
+
+}}>
 
 <button onClick={handleOpenCart} className="open-cart-button">
   Open Cart

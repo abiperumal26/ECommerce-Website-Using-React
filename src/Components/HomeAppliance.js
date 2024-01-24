@@ -1,31 +1,31 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import H1 from './Images/H1.webp';
-import H2 from './Images/H2.webp';
-import H3 from './Images/H3.webp';
-import H4 from './Images/H4.webp';
-import H5 from './Images/H5.webp';
-import H6 from './Images/H6.webp';
-import H7 from './Images/H7.webp';
-import H8 from './Images/H8.webp';
-import H9 from './Images/H9.webp';
-import H10 from './Images/H10.webp';
-import H11 from './Images/H11.webp';
-import H12 from './Images/H12.webp';
+import H1 from './Images/Jubake.webp';
+import H2 from './Images/comfyhome.webp';
+import H3 from './Images/agara.webp';
+import H4 from './Images/act.jpg';
+import H5 from './Images/acts.webp';
+import H6 from './Images/electric smokeless.webp';
+import H7 from './Images/mineral.webp';
+import H8 from './Images/Trolley.webp';
+import H9 from './Images/portable blender.jpg';
+import H10 from './Images/automatic coffee maker.jpg';
+import H11 from './Images/prime spin mop.webp';
+import H12 from './Images/bullet mixer grinder.jpg';
 import './HomeAppli.css';
 const products = [
-  { id: 1, name: 'Diamond Drum Front Load', price: '₹28,000', image: H1 },
-  { id: 2, name: 'Livpure', price: '₹15,000', image: H2 },
-  { id: 3, name: 'Water Pruifier', price: '₹18,000', image: H3 },
-  { id: 4, name: 'Usha IronBox', price: '₹3,000', image: H4 },
-  { id: 5, name: 'Vaccum Cleaner', price: '₹7,000', image: H5 },
-  { id: 6, name: 'Water Purifier', price: '₹15,000', image: H6 },
-  { id: 7, name: 'Machine', price: '₹20,000', image: H7 },
-  { id: 8, name: 'IFB', price: '₹35,000', image: H8 },
-  { id: 9, name: 'Vacuum', price: '₹9,000', image: H9 },
-  { id: 10, name: 'Venus', price: '₹10,000', image: H10 },
-  { id: 11, name: 'Filter', price: '₹8,000', image: H11 },
-  { id: 12, name: 'Ac', price: '₹45,000', image: H12 },
+  { id: 1, name: 'COMFYHOME Air Fryer', price: '₹5,999', image: H1 },
+  { id: 2, name: 'Air Fryer For Home', price: '₹4,999', image: H2 },
+  { id: 3, name: 'Acaro Oven', price: '₹1,699', image: H3 },
+  { id: 4, name: 'Activa Blender', price: '₹3,000', image: H4 },
+  { id: 5, name: 'ACTIVA Pluto Combo', price: '₹1,599', image: H5 },
+  { id: 6, name: 'Electric Stove', price: '₹4,000', image: H6 },
+  { id: 7, name: 'Water Purifier', price: '₹5,999', image: H7 },
+  { id: 8, name: 'Kitchen Trolley with wheels', price: '₹2,299', image: H8 },
+  { id: 9, name: 'Protable Blender ', price: '₹1,800', image: H9 },
+  { id: 10, name: 'Instant Coffee Maker', price: '₹10,000', image: H10 },
+  { id: 11, name: 'Mob', price: '₹800', image: H11 },
+  { id: 12, name: 'Cook Well Bullet Mixer Grinder', price: '₹2,477', image: H12 },
   // Add more products as needed
 ];
 
@@ -54,7 +54,9 @@ const HomeAppliance = () => {
   };
 
   return (
-    <div className="gadture-container">
+    <div className="gadture-container" style={{
+      marginTop:'80px'
+    }}>
       {products.map((product) => (
         <div key={product.id} className="gadture-card">
           <img src={product.image} alt={product.name} className="gadture-image" />
@@ -84,7 +86,11 @@ const HomeAppliance = () => {
         </div>
       )}
       
-      <div className='button-row'>
+      <div className='button-row' style={{
+  marginTop:'25px',
+  position:'fixed',
+  top:0
+}}>
 
 <button onClick={handleOpenCart} className="open-cart-button">
   Open Cart

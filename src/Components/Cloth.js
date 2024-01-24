@@ -1,30 +1,30 @@
 
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import dress1 from './Images/cloth.webp';
-import dress2 from './Images/dress2.webp';
-import dress3 from './Images/dress3.webp';
-import dress4 from './Images/dress4.webp';
-import dress5 from './Images/dress5.webp';
-import dress6 from './Images/dress6.webp';
-import dress7 from './Images/dress7.webp';
-import dress8 from './Images/dress8.webp';
-import dress9 from './Images/dress9.webp';
-import dress10 from './Images/dress10.webp';
-import dress11 from './Images/dress11.webp';
-import dress12 from './Images/dress12.webp';
-import './Gadget.css';
+import dress1 from './Images/clooo3.webp';
+import dress2 from './Images/clooo2.webp';
+import dress3 from './Images/clooo4.webp';
+import dress4 from './Images/meen5.webp';
+import dress5 from './Images/meen6.webp';
+import dress6 from './Images/meen8.webp';
+import dress7 from './Images/meesho3.webp';
+import dress8 from './Images/meesho2.webp';
+import dress9 from './Images/meesho5.webp';
+import dress10 from './Images/meen10.webp';
+import dress11 from './Images/meen8.webp';
+import dress12 from './Images/meen12.jpg';
+import './Cloth.css';
 const products = [
   { id: 1, name: 'Frock', price: '₹500', image: dress1 },
-  { id: 2, name: 'Top with Medi', price: '₹800', image: dress2 },
+  { id: 2, name: 'Kurti', price: '₹800', image: dress2 },
   { id: 3, name: 'cotton Frock', price: '₹500', image: dress3 },
-  { id: 4, name: 'Modern top', price: '₹400', image: dress4 },
-  { id: 5, name: 'Modern top ', price: '₹600', image: dress5 },
-  { id: 6, name: 'sleeve top', price: '₹400', image: dress6 },
-  { id: 7, name: 'cashual shirt', price: '₹600', image: dress7 },
-  { id: 8, name: 'stylish shirt', price: '₹500', image: dress8 },
-  { id: 9, name: 'Formal shirt', price: '₹800', image: dress9 },
-  { id: 10, name: 'white shirt', price: '₹400', image: dress10 },
+  { id: 4, name: 'cashual shirt', price: '₹400', image: dress4 },
+  { id: 5, name: 'stylish shirt ', price: '₹600', image: dress5 },
+  { id: 6, name: 'Formal shirt', price: '₹400', image: dress6 },
+  { id: 7, name: 'Full Frock', price: '₹600', image: dress7 },
+  { id: 8, name: 'Modern Tops', price: '₹500', image: dress8 },
+  { id: 9, name: 'Modern Kurti', price: '₹800', image: dress9 },
+  { id: 10, name: 'Blue shirt', price: '₹400', image: dress10 },
   { id: 11, name: 'Double Side ', price: '₹1,000', image: dress11 },
   { id: 12, name: 'stylish shirt', price: '₹800', image: dress12 },
   // Add more products as needed
@@ -54,7 +54,9 @@ const Cloth = () => {
   };
 
   return (
-    <div className="gadture-container">
+    <div className="gadture-container" style={{
+      marginTop:'80px'
+    }}>
       {products.map((product) => (
         <div key={product.id} className="gadture-card">
           <img src={product.image} alt={product.name} className="gadture-image" />
@@ -84,7 +86,11 @@ const Cloth = () => {
         </div>
       )}
 
-<div className='button-row'>
+<div className='button-row' style={{
+  marginTop:'25px',
+  position:'fixed',
+  top:0
+}}>
 
 <button onClick={handleOpenCart} className="open-cart-button">
   Open Cart

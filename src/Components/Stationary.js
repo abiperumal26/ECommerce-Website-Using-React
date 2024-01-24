@@ -1,34 +1,34 @@
 // Stationary.js
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import stat1 from './Images/stat1.webp';
-import stat2 from './Images/stat2.webp';
-import stat3 from './Images/stat3.webp';
-import stat4 from './Images/stat4.webp';
-import stat5 from './Images/stat5.webp';
-import stat6 from './Images/stat6.webp';
-import stat7 from './Images/stat7.webp';
-import stat8 from './Images/stat8.webp';
-import stat9 from './Images/stat9.webp';
-import stat10 from './Images/stat10.webp';
-import stat11 from './Images/stat11.webp';
-import stat12 from './Images/stat12.webp';
-import './Gadget.css';
+import stat1 from './Images/classmate.jpg';
+import stat2 from './Images/note.jpg';
+import stat3 from './Images/Memo pad notes.webp';
+import stat4 from './Images/Flair.jpg';
+import stat5 from './Images/oyatra.webp';
+import stat6 from './Images/Cello.jpg';
+import stat7 from './Images/Fun Clup Pen stand.webp';
+import stat8 from './Images/HVOMA.jpg';
+import stat9 from './Images/Hubuture.webp';
+import stat10 from './Images/Finemeo.jpg';
+import stat11 from './Images/goodiebox.jpg';
+import stat12 from './Images/wolpin.jpg';
+import './Stationary.css';
 
 // Placeholder data for products
 const products = [
-  { id: 1, name: 'CASIO Calc', price: '₹750', image: stat1 },
-  { id: 2, name: 'scissor', price: '₹300', image: stat2 },
-  { id: 3, name: 'Stabler', price: '₹800', image: stat3 },
-  { id: 4, name: 'Pin', price: '₹90', image: stat4 },
-  { id: 5, name: 'Pencil box', price: '₹100', image: stat5 },
-  { id: 6, name: 'Pencils', price: '₹200', image: stat6 },
-  { id: 7, name: 'Modern Pencils', price: '₹300', image: stat7 },
-  { id: 8, name: 'Markers', price: '₹900', image: stat8 },
-  { id: 9, name: 'Marker with Pens', price: '₹200', image: stat9 },
-  { id: 10, name: 'Highlighters', price: '₹100', image: stat10 },
-  { id: 11, name: 'Highlighters with light color', price: '₹150', image: stat11 },
-  { id: 12, name: 'Parker', price: '₹230', image: stat12 },
+  { id: 1, name: 'Classmate Spiral Binded Note ook', price: '₹750', image: stat1 },
+  { id: 2, name: 'Wipe Book', price: '₹175', image: stat2 },
+  { id: 3, name: 'Sticky Notes', price: '₹136', image: stat3 },
+  { id: 4, name: 'Pens', price: '₹1000', image: stat4 },
+  { id: 5, name: 'Mochi Highlighter', price: '₹198', image: stat5 },
+  { id: 6, name: 'Glitter Pen', price: '₹100', image: stat6 },
+  { id: 7, name: 'Pen Stand', price: '₹150', image: stat7 },
+  { id: 8, name: 'Markers', price: '₹275', image: stat8 },
+  { id: 9, name: 'Korean Highlighter', price: '₹536', image: stat9 },
+  { id: 10, name: 'Boa Boa Pouch', price: '₹625', image: stat10 },
+  { id: 11, name: 'Candy Highlighter', price: '₹360', image: stat11 },
+  { id: 12, name: 'Shaped Sticky Notes', price: '₹230', image: stat12 },
   // Add more products as needed
 ];
 
@@ -58,7 +58,9 @@ const Stationary = () => {
   };
 
   return (
-    <div className="gadture-container">
+    <div className="gadture-container" style={{
+      marginTop:'80px'
+    }}>
       {products.map((product) => (
         <div key={product.id} className="gadture-card">
           <img src={product.image} alt={product.name} className="gadture-image" />
@@ -88,7 +90,12 @@ const Stationary = () => {
         </div>
       )}
 
-<div className='button-row'>
+<div className='button-row' style={{
+  marginTop:'25px',
+  position:'fixed',
+  top:0
+
+}}>
 
 <button onClick={handleOpenCart} className="open-cart-button">
   Open Cart
