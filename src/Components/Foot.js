@@ -28,7 +28,7 @@ const products = [
   { id: 10, name: 'Mens Everest-02 Sports Trekking & Hiking', price: '₹1,044', image: slip10 },
   { id: 11, name: ' Skechers', price: '₹1,089', image: slip11 },
   { id: 12, name: 'Bersache Lightweight Casual Sneaker', price: '₹1,100', image: slip12 },
-  // Add more products as needed
+ 
 ];
 
 const Foot = () => {

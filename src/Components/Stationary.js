@@ -1,4 +1,3 @@
-// Stationary.js
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import stat1 from './Images/classmate.jpg';
@@ -15,7 +14,6 @@ import stat11 from './Images/goodiebox.jpg';
 import stat12 from './Images/wolpin.jpg';
 import './Stationary.css';
 
-// Placeholder data for products
 const products = [
   { id: 1, name: 'Classmate Spiral Binded Note ook', price: '₹750', image: stat1 },
   { id: 2, name: 'Wipe Book', price: '₹175', image: stat2 },
@@ -29,13 +27,13 @@ const products = [
   { id: 10, name: 'Boa Boa Pouch', price: '₹625', image: stat10 },
   { id: 11, name: 'Candy Highlighter', price: '₹360', image: stat11 },
   { id: 12, name: 'Shaped Sticky Notes', price: '₹230', image: stat12 },
-  // Add more products as needed
+
 ];
 
 const Stationary = () => {
   const [cartItems, setCartItems] = useState([]);
   const [showCart, setShowCart] = useState(false);
-  // const navigate = useNavigate(); // eslint-disable-line
+  // const navigate = useNavigate(); 
 
   const handleAddToCart = (product) => {
     setCartItems((prevCartItems) => [...prevCartItems, { ...product, quantity: 1 }]);

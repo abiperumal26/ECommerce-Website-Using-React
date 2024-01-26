@@ -28,7 +28,7 @@ const products = [
   { id: 10, name: 'Smart watch with ash', price: '₹7,000', image: gad10 },
   { id: 11, name: 'Smart watch with black', price: '₹5,000', image: gad11 },
   { id: 12, name: 'Smart Watch with black', price: '₹10,00', image: gad12 },
-  // Add more products as needed
+
 ];
 
 const Gadget = () => {

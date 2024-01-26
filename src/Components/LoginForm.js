@@ -28,10 +28,10 @@ const LoginForm = ({ onLogin }) => {
         setLoginError('');
 
         onLogin();
-        // Navigate to '/products' after successful login
+
         navigate('/products');
       } else {
-        const errorText = await response.text(); // Get the text response
+        const errorText = await response.text(); 
         console.error('Error during login:', errorText);
         setLoginError('Login failed. Please check your credentials.');
       }

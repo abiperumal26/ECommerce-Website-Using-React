@@ -26,7 +26,7 @@ const products = [
   { id: 10, name: 'Instant Coffee Maker', price: '₹10,000', image: H10 },
   { id: 11, name: 'Mob', price: '₹800', image: H11 },
   { id: 12, name: 'Cook Well Bullet Mixer Grinder', price: '₹2,477', image: H12 },
-  // Add more products as needed
+
 ];
 
 const HomeAppliance = () => {
