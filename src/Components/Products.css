@@ -11,7 +11,8 @@
     margin: 10px;
     padding: 15px;
     /* background-color: #1a1818; */
-    border: 1px solid #eb8c8c;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px solid black;
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.3s;

@@ -1,4 +1,4 @@
-
+/* 
 
 body {
   margin: 0;
@@ -120,6 +120,38 @@ ul.navigation li a:hover {
 
 .registration-button:hover {
   background-color: #ff1493; 
+} */
+#auto .nav-link-inline{
+  display: flex;
+}
+navbar {
+  background-color: #141010; /* Add your preferred background color */
+  border-bottom: 1px solid #ddd; /* Add your preferred border color */
+}
+
+.nav-link-inline {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  padding: 15px; /* Adjust padding as needed */
+  color: #fbf7f7; /* Add your preferred text color */
+  text-decoration: none;
+  background-color: #333;
+}
+
+/* .nav-link-inline:hover {
+  background-color: #f8f9fa; /* Add your preferred hover background color */
+/* }  */
+
+/* Your other styles */
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f8f9fa; /* Add your preferred background color */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 

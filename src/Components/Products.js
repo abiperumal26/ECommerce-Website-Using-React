@@ -1,5 +1,7 @@
+// Products.js
 import React from 'react';
 import { useNavigate, Link } from 'react-router-dom';
+
 import pro1 from './Images/furni112.webp';
 import pro2 from './Images/shirt.webp';
 import pro3 from './Images/mob.webp';
@@ -23,10 +25,9 @@ const Products = () => {
   const handleProductClick = (route) => {
     navigate(route);
   };
+
   return (
-    <div className="product-container" style={{
-      marginTop:'50px'
-    }}>
+    <div className="product-container" style={{ marginTop: '50px' }}>
       {products.map((product) => (
         <div key={product.id} className="product-card">
           <Link to={product.route}>
@@ -34,13 +35,13 @@ const Products = () => {
               src={product.image}
               alt={product.name}
               className="product-image"
-              onClick={() => handleProductClick(product.route)}
+              onClick={() => {
+                handleProductClick(product.route);
+              }}
+              style={{padding:'50px'}}
             />
           </Link>
           <h3>{product.name}</h3>
-          {/* <Link to="/addToCart" className="add-to-cart-link">
-            Add to Cart
-          </Link> */}
         </div>
       ))}
     </div>

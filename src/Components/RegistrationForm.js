@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './RegistrationForm.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const RegistrationForm = ({ onRegistration }) => {
   const navigate = useNavigate();
@@ -11,7 +11,6 @@ const RegistrationForm = ({ onRegistration }) => {
     password: '',
     confirmPassword: '',
     fullName: '',
-    address: '',
     phoneNumber: '',
   });
 
@@ -21,7 +20,6 @@ const RegistrationForm = ({ onRegistration }) => {
     password: '',
     confirmPassword: '',
     fullName: '',
-    address: '',
     phoneNumber: '',
   });
 
@@ -34,7 +32,7 @@ const RegistrationForm = ({ onRegistration }) => {
     // Validation for each field
     Object.keys(formData).forEach((fieldName) => {
       if (!formData[fieldName].trim()) {
-        newErrors[fieldName] = `${fieldName} is required`;
+        newErrors[fieldName] = `${fieldName.charAt(0).toUpperCase() + fieldName.slice(1)} is required`;
         valid = false;
       }
     });
@@ -92,12 +90,19 @@ const RegistrationForm = ({ onRegistration }) => {
             password: '',
             confirmPassword: '',
             fullName: '',
-            address: '',
             phoneNumber: '',
           });
+          setTimeout(() => {
+            navigate('/login');
+          }, 2000);
         } else {
-          const errorData = await response.json();
-          console.error('Failed to register user:', errorData.message);
+          const contentType = response.headers.get('content-type');
+          if (contentType && contentType.includes('application/json')) {
+            const errorData = await response.json();
+            console.error('Failed to register user:', errorData.message);
+          } else {
+            console.error('Failed to register user. Unexpected response from the server.');
+          }
         }
       } catch (error) {
         console.error('Error during registration:', error.message);
@@ -108,53 +113,60 @@ const RegistrationForm = ({ onRegistration }) => {
   };
 
   return (
-    <div className="registration-container" style={{
-      marginTop:'100px'
-    }}>
+    <div className="registration-container mt-5 p-4" style={{ margin: 'auto', maxWidth: '400px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)' }}>
       <form onSubmit={handleSubmit} autoComplete="off">
         {registrationSuccess && (
-          <div className="success-message">
+          <div className="alert alert-success" role="alert">
             Registration Successful! Data submitted to the server.
           </div>
         )}
 
         {Object.keys(formData).map((fieldName) => (
-          <div key={fieldName} className="form-group">
-            <label htmlFor={fieldName}>{fieldName}:</label>
-            {fieldName === 'password' || fieldName === 'confirmPassword' ? (
-              <input
-                type="password"
-                id={fieldName}
-                name={fieldName}
-                value={formData[fieldName]}
-                onChange={handleChange}
-                required
-                autoComplete="new-password"
-              />
-            ) : fieldName === 'address' ? (
-              <textarea
-                id={fieldName}
-                name={fieldName}
-                value={formData[fieldName]}
-                onChange={handleChange}
-                rows="4"
-                required
-              ></textarea>
-            ) : (
-              <input
-                type="text"
-                id={fieldName}
-                name={fieldName}
-                value={formData[fieldName]}
-                onChange={handleChange}
-                required
-              />
-            )}
-            <p className="error-message">{formErrors[fieldName]}</p>
+          <div key={fieldName} className="row mb-3">
+            <label htmlFor={fieldName} className="col-sm-4 col-form-label">
+              {fieldName.charAt(0).toUpperCase() + fieldName.slice(1)}:
+            </label>
+            <div className="col-sm-8">
+              {fieldName === 'password' || fieldName === 'confirmPassword' ? (
+                <input
+                  type="password"
+                  className="form-control"
+                  id={fieldName}
+                  name={fieldName}
+                  value={formData[fieldName]}
+                  onChange={handleChange}
+                  required
+                  autoComplete="new-password"
+                />
+              ) : fieldName === 'address' ? (
+                <textarea
+                  className="form-control"
+                  id={fieldName}
+                  name={fieldName}
+                  value={formData[fieldName]}
+                  onChange={handleChange}
+                  rows="4"
+                  required
+                ></textarea>
+              ) : (
+                <input
+                  type="text"
+                  className="form-control"
+                  id={fieldName}
+                  name={fieldName}
+                  value={formData[fieldName]}
+                  onChange={handleChange}
+                  required
+                />
+              )}
+              <small className="form-text text-danger">{formErrors[fieldName]}</small>
+            </div>
           </div>
         ))}
 
-        <button type="submit">Register</button>
+        <button type="submit" className="btn btn-primary">
+          Register
+        </button>
       </form>
 
       {registrationSuccess && navigate('/login')}

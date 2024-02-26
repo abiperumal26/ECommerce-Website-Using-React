@@ -1,6 +1,8 @@
+// App.js
 import React, { useState } from 'react';
-import { Routes, Route, Link, Navigate } from 'react-router-dom';
-
+import { Routes, Route, Navigate } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
+import Navigation from './Components/Navigation';
 import Home from './Components/Home';
 import Products from './Components/Products';
 import RegistrationForm from './Components/RegistrationForm';
@@ -12,96 +14,58 @@ import Stationary from './Components/Stationary';
 import Cloth from './Components/Cloth';
 import Foot from './Components/Foot';
 import AddToCart from './Components/AddToCart';
-import './App.css';
+
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
+// Placeholder function for order submission
+const yourSubmitOrderFunction = (userDetails) => {
+  // Your implementation
+  console.log('Submitting order:', userDetails);
+};
 
 const App = () => {
   const [isLoggedIn, setLoggedIn] = useState(false);
+  const [cartItems, setCartItems] = useState([]);
 
   const handleLogin = () => {
     setLoggedIn(true);
-   
   };
 
   const handleLogout = () => {
     setLoggedIn(false);
-   
+    // Navigate to the homepage after logout
+    return <Navigate to="/" />;
   };
 
   const handleRegistration = (username) => {
     console.log(`User ${username} registered successfully!`);
-   
+  };
+
+  const addToCart = (product) => {
+    console.log('Adding to cart:', product);
+    setCartItems((prevCartItems) => [...prevCartItems, { ...product, quantity: 1 }]);
   };
 
   return (
-    <div>
-      <nav style={{
-  marginTop:'10px',
-  position:'fixed',
-  top:0,
-  width:'100%'
-}}>
-        <ul className="navigation" >
-          <li><Link to="/">Home</Link></li>
-          {isLoggedIn && <li><Link to="/products">Products</Link></li>}
-          <li><Link to="/registration">Registration</Link></li>
-          {isLoggedIn ? (
-            <>
-              
-              <li onClick={handleLogout} className="logout-button">Logout</li>
-            </>
-          ) : (
-            <li><Link to="/login" className="login-button">Login</Link></li>
-          )}
-        </ul>
-      </nav>
-
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <div>
-              <Home />
-              <footer>&copy; Abinaya 2023</footer>
-            </div>
-          }
-        />
-        <Route
-          path="/products"
-          element={
-            <div>
-              <Products isLoggedIn={isLoggedIn} />
-              <footer>&copy; Abinaya 2023</footer>
-            </div>
-          }
-        />
-        <Route
-          path="/registration"
-          element={
-            <div>
-              <RegistrationForm onRegistration={handleRegistration} />
-              <footer>&copy; Abinaya 2023</footer>
-            </div>
-          }
-        />
-        <Route
-          path="/login"
-          element={
-            <div>
-              <LoginForm onLogin={handleLogin} />
-              <footer>&copy; Abinaya 2023</footer>
-            </div>
-          }
-        />
-        <Route path="/furniture" element={<Furniture />} />
-        <Route path="/gadget" element={<Gadget />} />
-        <Route path="/homeappliance" element={<HomeAppliance />} />
-        <Route path="/stationary" element={<Stationary />} />
-        <Route path="/cloth" element={<Cloth />} />
-        <Route path="/foot" element={<Foot />} />
-        <Route path="/addToCart" element={<AddToCart />} />
-        <Route path="/*" element={<Navigate to="/" />} />
-      </Routes>
-    </div>
+    <>
+      <Navigation isLoggedIn={isLoggedIn} handleLogout={handleLogout} showViewCartButton={window.location.pathname === '/products'} />
+      <Container>
+        <Routes>
+          <Route path="/" element={<Home isLoggedIn={isLoggedIn} handleLogout={handleLogout} />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/registration" element={<RegistrationForm onRegistration={handleRegistration} />} />
+          <Route path="/login" element={<LoginForm onLogin={handleLogin} />} />
+          <Route path="/furniture" element={<Furniture />} />
+          <Route path="/gadget" element={<Gadget />} />
+          <Route path="/homeappliance" element={<HomeAppliance />} />
+          <Route path="/stationary" element={<Stationary />} />
+          <Route path="/cloth" element={<Cloth />} />
+          <Route path="/foot" element={<Foot addToCart={addToCart} />} />
+          {isLoggedIn && <Route path="/addToCart" element={<AddToCart cartItems={cartItems} onSubmitOrder={yourSubmitOrderFunction} />} />}
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </Container>
+    </>
   );
 };
 
