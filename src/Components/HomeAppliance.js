@@ -69,16 +69,16 @@ const HomeAppliance = () => {
       <div className="row">
         {products.map((product) => (
           <div key={product.id} className="col-lg-4 mb-4">
-            <div className="card" style={{ borderRadius: '0px', boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', border: '1px solid white', background: '#FAF0F6', padding: '30px' }}>
+            <div className="card" style={{ borderRadius: '0px', boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', border: '1px solid white', background: '#F2F4F4 ', padding: '30px' }}>
               <img src={product.image} alt={product.name} className="card-img-top custom-image-size" width="100px" height="400px" />
               <div className="card-body">
                 <h3 className="card-title" style={{ fontFamily: 'Times,serif,Times New Roman,philosopher', fontSize: '18px', textAlign: 'center' }}>{product.name}</h3>
                 <p className="card-text" style={{ textAlign: 'center' }}>{product.price}</p>
-                <div className="d-flex justify-content-between">
+                <div className="d-flex "style={{margin:'0px 35px'}}>
                   <button onClick={() => handleAddToCart(product)} className="btn btn-primary">
                     Add to Cart
                   </button>
-                  <button onClick={() => handleShowItemModal(product)} className="btn btn-success">
+                  <button onClick={() => handleShowItemModal(product)} className="btn btn-success" style={{marginLeft:'10px'}}>
                     View Item
                   </button>
                 </div>

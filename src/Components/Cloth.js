@@ -74,11 +74,11 @@ const Cloth = () => {
               <div className="card-body">
                 <h3 className="card-title" style={{ fontFamily: 'Times,serif,Times New Roman,philosopher', fontSize: '18px', textAlign: 'center' }}>{product.name}</h3>
                 <p className="card-text" style={{ textAlign: 'center' }}>{product.price}</p>
-                <div className="d-flex justify-content-between">
+                <div className="d-flex" style={{margin :'0px 35px'}}>
                   <button onClick={() => handleAddToCart(product)} className="btn btn-primary">
                     Add to Cart
                   </button>
-                  <button onClick={() => handleShowItemModal(product)} className="btn btn-success">
+                  <button onClick={() => handleShowItemModal(product)} className="btn btn-success" style={{marginLeft:'10px'}}>
                     View Item
                   </button>
                 </div>
