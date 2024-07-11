@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ecommerce Website by Abinaya
 
 Welcome to my Ecommerce Website project developed using HTML, CSS, and ReactJS!
@@ -57,3 +58,7 @@ POST /login: User login
 Contributing
 If you'd like to contribute, please fork the repository and create a pull request. Issues and feature requests are welcome!
 
+=======
+# Ecommerce-Website-Using-React
+Developed a fully functional eCommerce website using React, incorporating JSON server for mock backend. Implemented features include product listing, shopping cart, and user authentication. Enhanced user experience with responsive design and smooth navigation.
+>>>>>>> 689ce5fe9143d1a2adabda8181c745917d065b02
